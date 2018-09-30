@@ -4,11 +4,13 @@ public class EarthquakeItemClass {
     private double mMagnitude;
     private String mLocation;
     private long mDate;
+    private String mUrl;
 
-    public EarthquakeItemClass(double Magnitude, String Location, long Date){
+    public EarthquakeItemClass(double Magnitude, String Location, long Date,String url){
         mMagnitude=Magnitude;
         mLocation=Location;
         mDate=Date;
+        mUrl=url;
     }
 
     public double getmMagnitude() {
@@ -21,5 +23,9 @@ public class EarthquakeItemClass {
 
     public String getmLocation() {
         return mLocation;
+    }
+
+    public String getmUrl() {
+        return mUrl;
     }
 }
